@@ -16,8 +16,6 @@ async function status(request, response) {
   });
   const openedConnectionsValue = openedConnectionsResult.rows[0].count;
 
-  console.log(openedConnectionsValue);
-
   response.status(200).json({
     updated_at: updatedAt,
     dependencies: {
